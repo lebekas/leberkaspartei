@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Österreichische Leberkas Partei</title>
+    <style>
+        body {
+            font-family: "Verdana", sans-serif;
+            background-color: #fff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header */
+        header {
+            background-color: #ffcc00;
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 4px solid #006400;
+        }
+        header img {
+            height: 120px;
+            max-width: 100%;
+        }
+        header h1 {
+            font-size: 2em;
+            margin: 0;
+            color: #006400;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #006400;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        /* Kontaktformular */
+        .contact-section {
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 20px;
+            background-color: #fffcdd;
+            border: 2px solid #006400;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .contact-section h2 {
+            font-size: 1.8em;
+            color: #006400;
+            border-bottom: 2px solid #ffcc00;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .contact-section label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        .contact-section input,
+        .contact-section textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        .contact-section button {
+            background-color: #006400;
+            color: #ffcc00;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .contact-section button:hover {
+            background-color: #004d00;
+            color: #fff;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #006400;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            border-top: 4px solid #ffcc00;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://lh4.googleusercontent.com/8PRV8iaI9UQU6WJ5Vv5xxTafv58wgGWoPkUDyAPjousxXIoDphUUC0xqcguosq8miAQWNd33IVxyJwZV3BJj1Vo=w1280" alt="Logo der Österreichischen Leberkas Partei">
+        <h1>Kontakt - Österreichische Leberkas Partei</h1>
+    </header>
+    <nav>
+        <a href="index.html">Startseite</a>
+        <a href="#kontakt">Kontakt</a>
+    </nav>
+    <div class="contact-section">
+        <h2>Kontaktieren Sie uns</h2>
+        <form action="mailto:info@leberkaspartei.at" method="post" enctype="text/plain">
+            <label for="name">Ihr Name</label>
+            <input type="text" id="name" name="name" placeholder="Ihr Name" required>
+
+            <label for="email">Ihre E-Mail</label>
+            <input type="email" id="email" name="email" placeholder="Ihre E-Mail-Adresse" required>
+
+            <label for="message">Ihre Nachricht</label>
+            <textarea id="message" name="message" rows="6" placeholder="Ihre Nachricht" required></textarea>
+
+            <button type="submit">Nachricht senden</button>
+        </form>
+    </div>
+    <footer>
+        &copy; 2024 Österreichische Leberkas Partei. Alle Rechte vorbehalten.
+    </footer>
+</body>
+</html>
